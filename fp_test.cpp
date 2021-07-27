@@ -197,40 +197,40 @@ int compute_area_tests()
     int failed_tests = 0;
 
     // Compute circle areas
-    Shape::circle circle_1 = {2.0};
+    adt_shape shape = Shape::circle{2.0};
     failed_tests += check_test_double("Compute Area (ADT/Pattern Matching) Test 1: Circle 1", 
-                                        compute_area(circle_1), 12.566);
-    Shape::circle circle_2 = {0.0};
+                                        compute_area(shape), 12.566);
+    shape = Shape::circle{0.0};
     failed_tests += check_test_double("Compute Area (ADT/Pattern Matching) Test 2: Circle 2", 
-                                        compute_area(circle_2), 0);
+                                        compute_area(shape), 0);
     // Compute square areas
-    Shape::square square_1 = {12.5};
+    shape = Shape::square{12.5};
     failed_tests += check_test_double("Compute Area (ADT/Pattern Matching) Test 3: Square 1", 
-                                        compute_area(square_1), 156.25);
-    Shape::square square_2 = {0.0};
+                                        compute_area(shape), 156.25);
+    shape = Shape::square{0.0};
     failed_tests += check_test_double("Compute Area (ADT/Pattern Matching) Test 4: Square 2", 
-                                        compute_area(square_2), 0);
+                                        compute_area(shape), 0);
     // Compute rectangle areas
-    Shape::rectangle rect_1 = {4.6, 7.2};
+    shape = Shape::rectangle{4.6, 7.2};
     failed_tests += check_test_double("Compute Area (ADT/Pattern Matching) Test 5: Rectangle 1", 
-                                        compute_area(rect_1), 33.12);
-    Shape::rectangle rect_2 = {0.0, 0.0};
+                                        compute_area(shape), 33.12);
+    shape = Shape::rectangle{0.0, 0.0};
     failed_tests += check_test_double("Compute Area (ADT/Pattern Matching) Test 6: Rectangle 2", 
-                                        compute_area(rect_2), 0);
+                                        compute_area(shape), 0);
     // Compute ellipse areas
-    Shape::ellipse ellipse_1 = {8.2, 4.3};
+    shape = Shape::ellipse{8.2, 4.3};
     failed_tests += check_test_double("Compute Area (ADT/Pattern Matching) Test 7: Ellipse 1", 
-                                        compute_area(ellipse_1), 110.77);
-    Shape::ellipse ellipse_2 = {0.0, 0.0};
+                                        compute_area(shape), 110.77);
+    shape = Shape::ellipse{0.0, 0.0};
     failed_tests += check_test_double("Compute Area (ADT/Pattern Matching) Test 8: Ellipse 2", 
-                                        compute_area(ellipse_2), 0);
+                                        compute_area(shape), 0);
     // Compute cylinder areas
-    Shape::cylinder cylinder_1 = {3.1, 8.8};
+    shape = Shape::cylinder{3.1, 8.8};
     failed_tests += check_test_double("Compute Area (ADT/Pattern Matching) Test 9: Cylinder 1", 
-                                        compute_area(cylinder_1), 231.787);
-    Shape::cylinder cylinder_2 = {0.0, 0.0};
+                                        compute_area(shape), 231.787);
+    shape = Shape::cylinder{0.0, 0.0};
     failed_tests += check_test_double("Compute Area (ADT/Pattern Matching) Test 10: Cylinder 2", 
-                                        compute_area(cylinder_2), 0);
+                                        compute_area(shape), 0);
 
     return failed_tests;
 }
