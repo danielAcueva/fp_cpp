@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Remove old program
+# Remove old program executable
 rm -rf fp_cpp
 
 # Compile the program

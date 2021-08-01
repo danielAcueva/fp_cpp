@@ -51,7 +51,7 @@ template<typename T>
 void inclist_HOF(std::vector<T>& in_list)
 {
     // apply the lambda function (which increments the element) over the entire list
-    // Applying a function in for_each is equivalent to applying a function via Haskell map
+    // Applying a function in for_each is equivalent to applying a function via Haskell map.
     // The function will be applied to each element of the list
     std::for_each(in_list.begin(), in_list.end(), [](T& x){x = x + 1;});
 }

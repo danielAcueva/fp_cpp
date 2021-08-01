@@ -275,12 +275,12 @@ int currying_tests()
     return failed_tests;
 }
 
-// Lazy computation of the fibonacci sequence
+// Lazy computation of the Fibonacci sequence
 int lazy_fibonacci_tests()
 {
     int failed_tests = 0;
 
-    // Create the fibonacci object
+    // Create the Fibonacci object
     Fibonacci fib;
     std::cout << std::endl;
     std::cout << "***** Lazy Fibonacci Tests " << std::endl;

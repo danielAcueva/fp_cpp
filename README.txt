@@ -7,7 +7,7 @@ This software source code is for demonstation and leanring purposes only. This
 software is not used as production software or a library extension. This software 
 is intended to study and apply concepts in and C++ software implementation. The
 concepts explored here can easily be applied to any application where FP makes
-sense
+sense.
 
 FP Concepts Demonstrated:
 -------------------------
